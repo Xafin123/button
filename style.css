@@ -1,0 +1,60 @@
+body{
+    background: black;
+
+}
+.fh h1{
+    color: aqua;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 40%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.bt{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-5%,-45%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: whitesmoke;
+    box-sizing: border-box;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: serif;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4  );
+    background-size: 400px;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+.bt:hover{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.bt ::before{
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    bottom:-5px;
+    right: 5px;
+    z-index: 1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4  );
+    border-radius: 25px;
+    cursor: pointer;
+    filter: blur(120px);
+    opacity:0px ;
+    transition: 0.9s;
+}
